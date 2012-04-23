@@ -1,3 +1,5 @@
+
+
 //Strings
 var isPhoneNum = function (phoneNum) {
 	//TODO: Fill in working code here that tests whether a string follows a phone number pattern such as 123-456-7890
@@ -14,13 +16,14 @@ var isURL = function (url) {
 	return {};
 }
 
-var makeTitle = function () {
+var makeTitle = function (words) {
 	//TODO: Fill in working code here that takes a string, splits into words, then uppercases the first letter of each word
 	return {};
 }
 
-var changeSeparator = function () {
-	//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
+var changeSeparator = function (string, string2) {
+	//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: 
+	//"a,b,c" + "," + "/" --> "a/b/c".
 	return {};
 }
 
@@ -47,7 +50,7 @@ var convertString = function (string) {
 
 //Arrays
 var findNum = function (number) {
-	//TODO: Fill in working code that finds the smallest value in an array that is greater than a give number.
+	//TODO: Fill in working code that finds the smallest value in an array that is greater than a given number.
 	return {};
 }
 
@@ -60,3 +63,26 @@ var sort = function (array) {
 	//TODO: Fill in working code that given an array of objects and the name of a key, rturn the array sorted by the value of that key in each of the objects: "a" + [{a:2}, {a:3}, {a:1}] --> [{a:1}, {a:2}, {a:3}]
 	return {};
 }
+
+
+/* 
+
+//Make Up: String Variable, Deliverable 2
+var name = "Courtney";
+
+//Make Up: While Loop, Deliverable 2
+while () {
+
+};
+
+//Make Up: Scope, Deliverable 2
+
+
+//Make Up: Arguments, Deliverable 2
+
+
+//Make Up: Returns, Deliverable 2
+
+
+*/
+
