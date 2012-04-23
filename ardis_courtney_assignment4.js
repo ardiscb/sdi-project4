@@ -4,10 +4,20 @@ var isPhoneNum = function (phoneNum) {
 	return {};
 }
 
-var isEmail = function (emailAddress) {
-	//TODO: Fill in working code here that test s whether a string follows an email address pattern such as aaa@bbb.ccc
+//Function: tests whether a string follows an email address pattern such as aaa@bbb.ccc
+//Not outputting correctly when going through if statement to see if there is a "." in the email address
+var isEmail = function () {
+	email = "ardiscb@fullsail.edu"
+	if (email.match("@") && email.match(".")) {
+		console.log("This is an email address.");
+	}
+	else {
+		console.log("This is not an email address");
+	};
 	return {};
-}
+};
+
+isEmail();
 
 //Function: tests whether a string is a URL. Does it start with http: or https:?
 var isURL = function () {
