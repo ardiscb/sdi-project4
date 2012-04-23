@@ -9,10 +9,19 @@ var isEmail = function (emailAddress) {
 	return {};
 }
 
-var isURL = function (url) {
-	//TODO: Fill in working code here that tests whether a string is a URL. Does it start with http: or https:?
+//Function: tests whether a string is a URL. Does it start with http: or https:?
+var isURL = function () {
+	url = "https://online.fullsail.edu";
+	if (url.match("http:") || url.match("https:")) {
+		console.log("This is a URL.");
+	}
+	else {
+		console.log("Not a URL");
+	};
 	return {};
-}
+};
+
+isURL();
 
 var makeTitle = function () {
 	//TODO: Fill in working code here that takes a string, splits into words, then uppercases the first letter of each word
