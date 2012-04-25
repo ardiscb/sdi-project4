@@ -1,32 +1,14 @@
 
-//Strings
 var courtneyLib = function() {
-
-<<<<<<< HEAD
+//Strings
 	var isPhoneNum = function (phoneNum) {
 		//TODO: Fill in working code here that tests whether a string follows a phone number pattern such as 123-456-7890
 		return {};
 	};
-=======
-//Function: tests whether a string follows an email address pattern such as aaa@bbb.ccc
-//Not outputting correctly when going through if statement to see if there is a "." in the email address
-var isEmail = function (emailAdd) {
-	email = "ardiscb@fullsail.edu"
-	if (email.match("@") && email.match(".")) {
-		console.log("This is an email address.");
-	}
-	else {
-		console.log("This is not an email address");
-	};
-	return {
-		"email": isEmail
-	};
-};
->>>>>>> de93cedf1240cb3bba251d40b24c2240d1aea96a
 
 	//Function: tests whether a string follows an email address pattern such as aaa@bbb.ccc
 	//Not outputting correctly when going through if statement to see if there is a "." in the email address
-	var isEmail = function (email) {
+	var isEmail = function (emailAdd) {
 		//var email = "ardiscb@fullsail.edu"
 		if (email.match("@") && email.match(".")) {
 			console.log("This is an email address.");
@@ -34,6 +16,7 @@ var isEmail = function (emailAdd) {
 		else {
 			console.log("This is not an email address");
 		};
+		return {};
 	};
 
 	//isEmail();
@@ -57,52 +40,50 @@ var isEmail = function (emailAdd) {
 		return {};
 	};
 
-<<<<<<< HEAD
 	var changeSeparator = function (string, string2) {
 		//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: 
 		//"a,b,c" + "," + "/" --> "a/b/c".
+
+		//Fill in For statement
+		/*
+		for () {
+			".".replace(", ");
+		}
+		*/
 		return {};
 	};
 
+	//changeSeparator("laptop.phone.bag.keys");
+
 	return {
 		//"phoneNumber": isPhoneNum,
-		"email": isEmail,
-		"url": isURL,
+		"isEmail": isEmail,
+		"isURL": isURL
 		//"title": makeTitle,
-		//"separator": changeSeparator
+		//"separator": changeSeparator,
+		//"formatNum": formatNum,
+		//"sort": sort
 
 	};
 };
 
-var library = courtneyLibrary();
+var library = courtneyLib();
 
 //functionName.isPhoneNum("123-456-7890");
-console.log(library.isEmail("ardiscb@fullsail.edu"));
+library.isEmail("ardiscb@fullsail.edu");
 library.isURL("http://online.fullsail.edu");
-=======
-var changeSeparator = function (string, string2) {
-	//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: 
-	//"a,b,c" + "," + "/" --> "a/b/c".
-	/* 
-	//Fill in for statement
-	for () {
-		".".replace(", ");
-	}
+
+//Numbers
+var formatNum = function (number) {
+	//TODO: Fill in working code here that formats a number to use a specific number of decimal places such as money: 2.1 --> 2.10
+	
+	//Not complete
+	/*
+	number = Math.floor();
 	*/
 	return {};
 }
-changeSeparator("laptop.phone.bag.keys");
->>>>>>> de93cedf1240cb3bba251d40b24c2240d1aea96a
-
-//Numbers (not working)
-var formatNum = function (number) {
-	//TODO: Fill in working code here that formats a number to use a specific number of decimal places such as money: 2.1 --> 2.10
-	number = Math.floor();	
-	return {
-		"number": formatNum
-	};
-}
-formatNum(2.15);
+//formatNum(2.15);
 
 var matchNum = function (number) {
 	//TODO: Fill in working code that fuzzy-matches a number: is the number above or below a number within a certain percent?
@@ -133,9 +114,7 @@ var findValue = function (numbers) {
 var sort = function (array) {
 	//TODO: Fill in working code that given an array of objects and the name of a key, rturn the array sorted by the value of that key in each of the objects: "a" + [{a:2}, {a:3}, {a:1}] --> [{a:1}, {a:2}, {a:3}]
 	array = [];
-	return {
-		"array": sort
-	};
+	return {};
 }
 
 
