@@ -1,50 +1,67 @@
 
 
 //Strings
-var isPhoneNum = function (phoneNum) {
-	//TODO: Fill in working code here that tests whether a string follows a phone number pattern such as 123-456-7890
-	return {};
-}
+var courtneyLib = function() {
 
-//Function: tests whether a string follows an email address pattern such as aaa@bbb.ccc
-//Not outputting correctly when going through if statement to see if there is a "." in the email address
-var isEmail = function () {
-	email = "ardiscb@fullsail.edu"
-	if (email.match("@") && email.match(".")) {
-		console.log("This is an email address.");
-	}
-	else {
-		console.log("This is not an email address");
+	var isPhoneNum = function (phoneNum) {
+		//TODO: Fill in working code here that tests whether a string follows a phone number pattern such as 123-456-7890
+		return {};
 	};
-	return {};
+
+	//Function: tests whether a string follows an email address pattern such as aaa@bbb.ccc
+	//Not outputting correctly when going through if statement to see if there is a "." in the email address
+	var isEmail = function (email) {
+		//var email = "ardiscb@fullsail.edu"
+		if (email.match("@") && email.match(".")) {
+			console.log("This is an email address.");
+		}
+		else {
+			console.log("This is not an email address");
+		};
+	};
+
+	//isEmail();
+
+	//Function: tests whether a string is a URL. Does it start with http: or https:?
+	var isURL = function (url) {
+		var url = "https://online.fullsail.edu";
+		if (url.match("http:") || url.match("https:")) {
+			console.log("This is a URL.");
+		}
+		else {
+			console.log("Not a URL");
+		};
+		return {};
+	};
+
+	//isURL();
+
+	var makeTitle = function (words) {
+		//TODO: Fill in working code here that takes a string, splits into words, then uppercases the first letter of each word
+		return {};
+	};
+
+	var changeSeparator = function (string, string2) {
+		//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: 
+		//"a,b,c" + "," + "/" --> "a/b/c".
+		return {};
+	};
+
+	return {
+		//"phoneNumber": isPhoneNum,
+		"email": isEmail,
+		"url": isURL,
+		//"title": makeTitle,
+		//"separator": changeSeparator
+
+	};
 };
 
-isEmail();
+var library = courtneyLibrary();
 
-//Function: tests whether a string is a URL. Does it start with http: or https:?
-var isURL = function () {
-	url = "https://online.fullsail.edu";
-	if (url.match("http:") || url.match("https:")) {
-		console.log("This is a URL.");
-	}
-	else {
-		console.log("Not a URL");
-	};
-	return {};
-};
-
-isURL();
-
-var makeTitle = function (words) {
-	//TODO: Fill in working code here that takes a string, splits into words, then uppercases the first letter of each word
-	return {};
-}
-
-var changeSeparator = function (string, string2) {
-	//TODO: Fill in working code here that given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: 
-	//"a,b,c" + "," + "/" --> "a/b/c".
-	return {};
-}
+//functionName.isPhoneNum("123-456-7890");
+console.log(library.isEmail("ardiscb@fullsail.edu"));
+library.isURL("http://online.fullsail.edu");
 
 //Numbers
 var formatNum = function (number) {
